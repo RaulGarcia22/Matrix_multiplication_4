@@ -72,7 +72,6 @@ public class TestMultiplication {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 if (Math.abs(matrix1.matrix()[i][j] - matrix2.matrix()[i][j]) > epsilon) {
-                    System.out.println(matrix1.matrix()[i][j] + " hola " + matrix2.matrix()[i][j]);
                     return false;
                 }
             }

@@ -10,11 +10,6 @@ public class SimpleMatrixMultiplication implements MultiplicationInterface {
     public SimpleMatrixMultiplication(DenseMatrix a, DenseMatrix b) {
         this.a = a;
         this.b = b;
-
-        if (a.size() != b.size()) {
-            throw new IllegalArgumentException("Matrix sizes do not match");
-        }
-
         this.c = new DenseMatrix(a.size(), new double[a.size()][b.size()]);
     }
 
